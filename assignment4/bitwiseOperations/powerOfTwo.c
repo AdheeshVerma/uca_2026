@@ -1,11 +1,8 @@
 #include <stdio.h>
 int isPower2(int num)
 {
-    if (num == 0)
-        return 0;
-    if ((num & (num - 1)) == 0)
-        return 1;
-    return 0;
+
+    return num != 0 && ((num & (num - 1)) == 0);
 }
 int main()
 {
